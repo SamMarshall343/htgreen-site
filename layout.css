@@ -1,0 +1,201 @@
+/* ===============================
+   Base / Global Styles
+================================= */
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* ===============================
+   Header
+================================= */
+header {
+    text-align: center;
+    background-color: #35b444;
+    color: #000;
+    padding: 1.25em;
+    font-family: Georgia, serif;
+}
+
+header h1 {
+    margin: 0 0 0.25em 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* ===============================
+   Navigation
+================================= */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.25em;
+    padding: 0;
+    margin: 1em 0 0 0;
+}
+
+.main-nav li {
+    display: inline-block;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 0.5em 0.75em;
+    transition: background-color 0.3s ease;
+    border-radius: 0.25em;
+}
+
+.main-nav a:hover {
+    background-color: #f5f5dc;
+}
+
+/* ===============================
+   Form Container
+================================= */
+.form-container {
+    max-width: 500px;
+    margin: 2em auto;
+    padding: 1em;
+}
+
+.form-container h2 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+
+/* ===============================
+   Contact Form
+================================= */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    background-color: #f5f5dc;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 0.25em;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Checkbox group */
+.checkbox-group {
+    display: flex;
+    gap: 1em;
+    font-size: 1rem;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.25em;
+}
+
+/* Buttons */
+.form-buttons {
+    display: flex;
+    gap: 0.5em;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #0b1f4a;
+    color: #fff;
+    border: none;
+    padding: 0.625em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    flex: 1;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #142d6e;
+}
+
+/* Focus state */
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0b1f4a;
+    box-shadow: 0 0 5px rgba(11,31,74,0.5);
+}
+
+/* Placeholder styling */
+input::placeholder,
+textarea::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* ===============================
+   Media Queries (Mobile)
+================================= */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5em;
+    }
+
+    .main-nav li {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #000;
+    }
+
+    .main-nav a {
+        display: block;
+        padding: 0.5em 0;
+    }
+
+    .contact-form {
+        width: 95%;
+        padding: 1em;
+        gap: 1.25em;
+    }
+
+    .checkbox-group {
+        flex-direction: column;
+    }
+}

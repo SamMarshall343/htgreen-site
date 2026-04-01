@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HT Green Contact</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+
+<header>
+    <h1>HT Green</h1>
+    <p>Send us your sales or general enquiry</p>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="form-container">
+    <h2>Get in touch with HT Green</h2>
+
+    <form action="thanks.html" method="get" class="contact-form">
+
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" inputmode="tel">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="comments">How can we help?</label>
+        <textarea id="comments" name="comments" placeholder="Write your message here..." rows="5" required></textarea>
+
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="enquiry" value="sales"> Sales query</label>
+            <label><input type="checkbox" name="enquiry" value="general"> General enquiry</label>
+        </div>
+
+        <div class="form-buttons">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset Form">
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
